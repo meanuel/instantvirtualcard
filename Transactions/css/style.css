@@ -1,0 +1,103 @@
+body {
+    background: #EFF8FF;
+    font-family: Open Sans, sans-serif;
+}
+
+.instant {
+    font-family: Graphik;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 21px;
+    font-style: italic;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.nav-link {
+    font-family: Graphik;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    color: black;
+}
+
+.active {
+    font-family: Graphik;
+    font-weight: 600;
+    font-size: 20px;
+    font-style: normal;
+    color: #2D77FF;
+    display: inline-block;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.active:before {
+    content: "";
+    position: absolute;
+    width: 70%;
+    bottom: 0;
+    left: 15%;
+    border-bottom: 5px solid #2D77FF;
+    border-radius: 20px;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.bf-footer {
+    background: #181C2C;
+}
+
+
+/* carousel */
+
+.targ {
+    border-radius: 30px;
+    width: 400px;
+    padding: 25px;
+}
+
+.btn-targ {
+    margin-left: auto;
+    color: #fff;
+    background: #5DB1FF;
+    border-radius: 9px;
+    padding: 9px;
+    border: 0;
+}
+
+.bg-progress {
+    background: #51D676;
+}
+
+.slick-slide {
+    opacity: 0.3;
+    transition: all ease 0.5s;
+}
+
+.slick-current {
+    transform: scale(1);
+    border: 4px solid #27B660;
+    opacity: 1;
+}
+
+.circle {
+    background: blue;
+    padding: 15px;
+    color: white;
+    border-radius: 50%;
+}
+
+.btn-table {
+    background: #4D5B81;
+}
+
+.tr-table {
+    background: #E5E5E5;
+}

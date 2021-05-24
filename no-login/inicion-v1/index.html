@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+
+    <!-- font awesome -->
+    <link href="https://kit-pro.fontawesome.com/releases/v5.15.3/css/pro.min.css" rel="stylesheet">
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha512-bnIvzh6FU75ZKxp0GXLH9bewza/OIw6dLVh9ICg0gogclmYGguQJWl8U30WpbsGTqbIiAwxTsbe76DErLq5EDQ==" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav>
+        <div class="logo">
+            <a href="#">
+                <img src="logo.png" class="mr-2" alt="Error">
+            </a>
+            <div>
+                <span class="instant text-white">INSTANT</span><br>
+                <img src="virtual.png" alt="Error">
+            </div>
+        </div>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+
+        <div class="derecha">
+            <a href="#" class="btn btn-primary">Create a new account</a>
+            <a href="#"> <i class="far fa-user"></i> Login</a>
+        </div>
+
+        <ul>
+            <li>
+                <a class="active" href="#">Create a virtual card</a>
+            </li>
+            <li>
+                <a href="#">Personal use</a>
+            </li>
+            <li><a href="#">For enteprises</a></li>
+            <li>
+                <a href="#">for developers</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- end nav -->
+
+    <section>
+        <!-- header -->
+        <header>
+            <ul>
+                <li>
+                    <h1>Create virtual Visa card Instantly</h1>
+                </li>
+                <li>
+                    <i><img src="chulo.png" alt="error"></i> Secure onlines purchases
+                </li>
+                <li>
+                    <i><img src="chulo.png" alt="error"></i> Controlling yout staff`s or familiar budget
+                </li>
+                <li>
+                    <i><img src="chulo.png" alt="error"></i> Keeping control of subcriptios services
+                </li>
+            </ul>
+        </header>
+
+        <!-- end header -->
+
+        <!-- cards -->
+        <div class="rallas-movil justify-content-end">
+            <h1 id="circulo1" class="circuloo">1</h1>
+            <hr class="striped-border" width="50%">
+            <h1 id="circulo2" class="circulod">2</h1>
+            <hr class="striped-border" width="50%">
+            <h1 id="circulo3" class="circulod">3</h1>
+        </div>
+        <div class="contenedor">
+
+
+            <div class="columna">
+                <div class="rallas">
+                    <hr width="50%" color="transparent">
+                    <h1 class="circulo">1</h1>
+                    <hr class="striped-border" width="50%">
+                </div>
+
+                <!-- cuadro 1 -->
+                <div id="columna1" class="cuadro">
+                    <h1 class="titulo-row">User information</h1>
+
+                    <div class="checks">
+                        <div class="checkes-group">
+                            <input id="radio1" type="radio" name="radio">
+                            <label for="radio1">Personal use</label>
+                        </div>
+                        <div class="checkes-group">
+                            <input id="radio2" type="radio" name="radio">
+                            <label for="radio2">Third person</label>
+                        </div>
+                        <div class="checkes-group">
+                            <input id="radio3" type="radio" name="radio">
+                            <label for="radio3">Shared budge</label>
+                        </div>
+                    </div>
+
+                    <div class="formato">
+                        <label for="email">Your email (very important for card recovery)</label>
+                        <input type="email">
+                    </div>
+
+                    <div class="formato">
+                        <label for="amount">Amoutn to found</label>
+
+                        <div class="group-select">
+                            <input class="grupito" id="amount" type="number">
+                            <span>|</span>
+                            <select name="typeM">
+                                <option value="USD">USD</option>
+                                <option value="EUR">EUR</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="formato">
+                        <label for="use">Main use of the virtual card</label>
+                        <select class="seleccion" name="use" id="use">
+                            <option value="Online Shopping">Online Shopping</option>
+                        </select>
+                    </div>
+
+                    <!-- boton para modo movil -->
+                    <button id="boton1" class="btn btn1 m-2 btn-primary btn-block" style="width:95%">Next-step</button>
+
+                </div>
+            </div>
+
+            <!-- end cuadro 1 -->
+
+            <!-- cuadro 2 -->
+            <div id="columna2" class="columna">
+                <div class="rallas">
+                    <hr class="striped-border" width="50%">
+                    <h1 class="circulo">2</h1>
+                    <hr class="striped-border" width="50%">
+                </div>
+
+                <div class="cuadro">
+                    <h1 class="titulo-row">Secure payment</h1>
+
+                    <div id="no-shared" class="no-shared">
+                        <div class="radio-cuadro2">
+                            <input id="radioc2-1" type="radio" name="radioc2-1">
+                            <img src="targ.png" alt="error">
+                            <div class="cuadro2-sub">
+                                <h1>Credit card (Instant)</h1>
+                                <span>Commission 2.5%</span>
+                            </div>
+                        </div>
+
+                        <div class="radio-cuadro2">
+                            <input id="radioc2-1" type="radio" name="radioc2-1">
+                            <img src="targ.png" alt="error">
+                            <div class="cuadro2-sub">
+                                <h1>Instant bank transfer (IBAN)</h1>
+                                <span>Commission 2.5%</span>
+                            </div>
+                        </div>
+
+                        <div class="radio-cuadro2">
+                            <input id="radioc2-1" type="radio" name="radioc2-1">
+                            <img src="targ.png" alt="error">
+                            <div class="cuadro2-sub">
+                                <h1>Bank transfer (no - IBAN)</h1>
+                                <span>Commission 2.5%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="shared">
+                        <span class="sub">Payment method</span>
+
+                        <div class="selectbox">
+                            <div class="select" id="select">
+                                <div class="contenido-select">
+                                    <h1 class="titulo">Selecciona tu metodo de pago</h1>
+                                </div>
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+
+                            <div class="opciones" id="opciones">
+                                <a href="#" class="opcion">
+                                    <div class="contenido-opcion">
+                                        <img src="targ.png" alt="error">
+                                        <div class="textos">
+                                            <h1 class="titulo">Credit card (instant)</h1>
+                                            <p class="descripcion">Commission 2.5%</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="opcion">
+                                    <div class="contenido-opcion">
+                                        <img src="targ.png" alt="error">
+                                        <div class="textos">
+                                            <h1 class="titulo">Instant bank transfer (IBAN)</h1>
+                                            <p class="descripcion">Commission 0.5%</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="opcion">
+                                    <div class="contenido-opcion">
+                                        <img src="targ.png" alt="error">
+                                        <div class="textos">
+                                            <h1 class="titulo">Bank transfer (no - IBAN)</h1>
+                                            <p class="descripcion">Commission 1.5%</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- aqui esta el input segun el select que escojan para el form -->
+                            <input type="hidden" name="banco" id="inputSelect" value="">
+                        </div>
+
+                        <div class="info">
+                            <span class="sub">Who are going to pay ?</span>
+                            <button class="add"><i class="far fa-plus-circle"></i> Add person</button>
+                        </div>
+
+                        <div class="form-2">
+                            <div class="formato">
+                                <label for="name">Name</label>
+                                <input id="name" type="text">
+                            </div>
+                            <div class="formato">
+                                <label for="email2">Email</label>
+                                <input id="email2" type="email">
+                            </div>
+                            <div class="formato">
+                                <label for="amount">Amoutn to found</label>
+
+                                <div class="group-select">
+                                    <input class="grupito" id="amount" type="number">
+                                    <span>|</span>
+                                    <select name="typeM">
+                                        <option value="USD">USD</option>
+                                        <option value="EUR">EUR</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <button class="delete"><i class="far fa-times-circle"></i> Delete</button>
+                        </div>
+
+                        <span class="span-cuadro2"><i class="far fa-question-circle"></i> If you also are paying, please add yourself as a payer with your Name and Email. One email with payment instructions will be sent to all immediately</span>
+                    </div>
+
+                    <hr style="margin-left: auto; margin-right: auto;" width="90%" color="white">
+
+                    <h1 class="span-cuadro2">Aceptamos todas las tarjetas con pago seguro</h1>
+
+                    <div class="metodos">
+                        <img src="metodos.PNG" alt="error">
+                    </div>
+
+                    <!-- boton para modo movil -->
+                    <button id="boton2" class="btn1 btn m-2 btn-primary btn-block" style="width:95%">Next-step</button>
+
+                </div>
+            </div>
+
+            <!-- end cuadro 2 -->
+
+            <!-- cuadro 3 -->
+
+            <div id="columna3" class="columna">
+                <div class="rallas">
+                    <hr class="striped-border" width="50%">
+                    <h1 class="circulo">3</h1>
+                </div>
+
+                <div class="cuadro3">
+                    <h1 class="titulo-row3">Your virtual VISA card</h1>
+                    <span class="sub">can be used innediately</span>
+                    <img class="target" src="target.PNG" alt="error">
+                    <span class="span-cuadro2"><i class="far fa-question-circle"></i> Please store card detailisin a safe place. We won't be able to show them again to your security reasons</span>
+                    <hr width="100%" color="white">
+
+                    <div class="info">
+                        <h1 class="infot">Amount</h1>
+                        <h1 class="infor">1200 USD</h1>
+                    </div>
+
+                    <div class="info">
+                        <h1 class="infot">Fee</h1>
+                        <h1 class="infor">0,00%</h1>
+                    </div>
+
+                    <hr width="100%" color="white">
+
+                    <div class="info">
+                        <h1 class="infott">Total</h1>
+                        <h1 class="inforr">1.200 USD</h1>
+                    </div>
+
+                    <a class="download" href="#">Download receipt</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-page">
+            <h1 class="titulos">Control your purchases</h1>
+            <span>Customize your online shopping, using different cards with certain value. Choose Virtual Card that suits you best!</span>
+        </div>
+
+        <div class="d-flex flex-column mt-2 justify-content-center align-items-center">
+            <div class="row">
+                <div class="col d-flex flex-column justify-content-center align-items-center">
+                    <img class="pequeño" src="img1.PNG" alt="error">
+                </div>
+                <div class="col">
+                    <img class="pequeño d-block" src="img2.PNG" alt="error">
+                    <img class="mt-4 pequeño" src="img3.png" alt="error">
+                </div>
+                <div class="col-lg-3">
+                    <h4 class="text-white mb-4">Crea tarjetas para tus empleados/departamentos</h4>
+                    <span class="text-white">Lorem ipsum dolor sit amet, consectetur adipscing elit. Morbi bibendum montes, venenatis mi tincidunt morbi. Adipiscing.</span>
+                    <div class="my-4 d-flex flex-column justify-content-center">
+                        <span class="text-white small"><img src="chulo.png" alt="error"> Keeping control of subcriptions services</span>
+                    </div>
+                    <div class="my-4 d-flex flex-column justify-content-center">
+                        <span class="text-white small"><img src="chulo.png" alt="error"> Keeping control of subcriptions services</span>
+                    </div>
+                    <div class="my-4 d-flex flex-column justify-content-center">
+                        <span class="text-white small"><img src="chulo.png" alt="error"> Keeping control of subcriptions services</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="d-flex flex-column mt-4 justify-content-center align-items-center">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h4 class="text-white mb-4">Controla el gasto de cada una con limites mensuales editable</h4>
+                    <span class="text-white">Lorem ipsum dolor sit amet, consectetur adipscing elit. Ac pharetra sed lacinia ut hendrerit tempus. Quis ac vitae dolor et.</span>
+                    <div class="my-4 d-flex flex-column justify-content-center">
+                        <span class="text-white small"><img src="chulo.png" alt="error"> Keeping control of subcriptions services</span>
+                    </div>
+                    <div class="my-4 d-flex flex-column justify-content-center">
+                        <span class="text-white small"><img src="chulo.png" alt="error"> Keeping control of subcriptions services</span>
+                    </div>
+                    <div class="my-4 d-flex flex-column justify-content-center">
+                        <span class="text-white small"><img src="chulo.png" alt="error"> Keeping control of subcriptions services</span>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <img src="img4.PNG" class="pequeño" alt="error">
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex flex-column septop justify-content-center align-items-center">
+            <div class="row">
+                <div class="col">
+                    <img class="pequeño" src="img5.png" alt="error">
+                </div>
+
+                <div class="col-lg-6">
+                    <h4 class="text-white mb-4">Estractos bancarios mensuales con los gastos de cada tarjeta</h4>
+                    <span class="text-white">Lorem ipsum dolor sit amet, consectetur adipscing elit. Convallis sapien aget habitant tristique mattis. Elit vitae.</span>
+                    <div class="my-4 d-flex flex-column justify-content-center">
+                        <span class="text-white small"><img src="chulo.png" alt="error"> Keeping control of subcriptions services</span>
+                    </div>
+                    <div class="my-4 d-flex flex-column justify-content-center">
+                        <span class="text-white small"><img src="chulo.png" alt="error"> Keeping control of subcriptions services</span>
+                    </div>
+                    <div class="my-4 d-flex flex-column justify-content-center">
+                        <span class="text-white small"><img src="chulo.png" alt="error"> Keeping control of subcriptions services</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="page-footer text-white py-4 bg-page mt-4">
+            <div class="container-fluid text-center text-md-left">
+                <div class="row">
+                    <div class="col">
+                        <div class="mb-4">
+                            <img src="icono.png" alt="error">
+                        </div>
+                        <span>A service offered by Dent Co Finances @ All Rights Reserved.</span>
+                        <div class="my-4">
+                            <span>Terms of service | privace plicy | refund policy</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-auto">
+                        <a href="#">
+                            <img class="pequeño" src="img6.PNG" alt="error">
+                        </a>
+                    </div>
+
+                    <div class="col">
+                        <h4>Direccion</h4>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, convallis sapien eget habitant tristique mattis. elit vitae.</span>
+                        <h4 class="mt-4">Phone</h4>
+                        <span>+57 9985 909 80</span>
+                        <h4 class="mt-4">Email</h4>
+                        <span>email@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
