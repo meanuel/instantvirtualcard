@@ -196,6 +196,12 @@ span {
     max-width: 672px;
 }
 
+@media (max-width: 501px) {
+    .caja-l {
+        padding: 0;
+    }
+}
+
 .checks {
     display: flex;
     justify-content: center;
@@ -256,7 +262,7 @@ input[type=radio] {
 }
 
 .grupito {
-    width: 80% !important;
+    width: 70% !important;
     border: 0;
 }
 
