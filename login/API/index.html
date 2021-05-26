@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>API</title>
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha512-bnIvzh6FU75ZKxp0GXLH9bewza/OIw6dLVh9ICg0gogclmYGguQJWl8U30WpbsGTqbIiAwxTsbe76DErLq5EDQ==" crossorigin="anonymous"></script>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- font awesome -->
+    <link href="https://kit-pro.fontawesome.com/releases/v5.15.3/css/pro.min.css" rel="stylesheet">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav>
+        <div class="logo">
+            <a class="cardd" href="#">
+                <img class="virtual" src="assets/logo.png" class="mr-2" alt="Error">
+            </a>
+            <div>
+                <span class="instant">INSTANT</span><br>
+                <img class="virtual" src="assets/virtual.png" alt="Error">
+            </div>
+        </div>
+
+        <div class="derecha">
+            <a href="#" class="btn btn-nvbar btn-primary"><i class="far fa-plus-circle"></i> Create a new account</a>
+
+            <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="assets/avatar.jpg" class="avatar" alt="error">
+                    <span class="mx-2 text-black-50">Manuel Lopez</span>
+                    <i class="fas fa-chevron-down text-black-50"></i>
+                </a>
+                <div class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
+                    <a href="#" class="dropdown-item">Perfil</a>
+                    <a href="#" class="dropdown-item">Perfil</a>
+                    <a href="#" class="dropdown-item">Perfil</a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item">Perfil</a>
+                </div>
+            </div>
+        </div>
+
+        <ul class="text-black">
+            <li>
+                <a href="#">
+                    <div class="icono"><i class="fal fa-credit-card"></i></div>
+                    <div>My cards</div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="icono"><i class="fas fa-bars"></i> </div>
+                    <div>Transactions</div>
+                </a>
+            </li>
+            <li>
+                <a class="active" href="#">
+                    <div class="icono"><i class="fas fa-angle-left"></i><i class="fas fa-angle-right"></i></div>
+                    <div>API</div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="icono"><i class="far fa-cog"></i></div>
+                    <div>Settings</div>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- end nav -->
+
+    <!-- body  -->
+
+    <div class="my-4 container">
+        <h1 class="font-weight-bold">API</h1>
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, condimentum nec, viverra vitae gravida. cursus eget</span>
+
+        <div class="row">
+
+            <!-- col 1 -->
+            <div class="col-lg-6 mt-4">
+                <form action="#" class="fondo-form p-4">
+                    <h3 class="text-white">Formas de pago</h3>
+                    <div class="select-form py-1 px-3">
+                        <div class="d-flex">
+                            <div class="mt-3">
+                                <span class="text-white credit"><i class="fal fa-credit-card"></i></span>
+                            </div>
+
+                            <div class="col">
+                                <!-- select -->
+                                <select name="instant" class="select-form2 form-control my-0">
+                                    <option value="instant" title="Instant banck transfer (IBAN)">
+                                        <span>instant bank transfer(IBAN)</span>
+                                    </option>
+                                </select>
+                                <!-- end select -->
+                                <span class="desenfoque ml-3 my-0">comission 0.5%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group mt-3">
+                        <label for="banco" class="text-white">Banco</label>
+                        <input type="text" id="banco" class="form-control" placeholder="Ingrese el banco">
+                    </div>
+
+                    <div class="form-group mt-3">
+                        <label for="pays" class="text-white">Pays</label>
+                        <select name="pays" class="form-control" id="pays">
+                            <option value="United">United States</option>
+                            <option value="as">Colombia</option>
+                            <option value="asd">colombas</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group mt-3">
+                        <label for="number" class="text-white">Numero de cuenta</label>
+                        <input type="number" id="number" class="form-control" placeholder="numero de cuenta">
+                    </div>
+
+                    <div class="form-group mt-3">
+                        <label for="swift" class="text-white">Swift</label>
+                        <input type="text" id="swift" class="form-control" placeholder="swift">
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-lg-6 mt-4">
+                <div class="fondo-form p-4 text-white">
+                    <h3 class="text-white">Clave API</h3>
+                    <hr size="10" color="white" />
+                    <div class="d-flex mb-3">
+                        <span class="font-weight-bold">Publica</span>
+                        <button class="azules" onclick="CopyToClipboard('sample');return false;"><i class="far fa-copy"></i> Copy</button>
+                    </div>
+
+                    <div class="copy" id="sample">
+                        dljalflakfasfjafafnakfnasmdmlñasdaldañlsdksñaldkñlaskdñlaskdñalskd
+                    </div>
+
+                    <div class="d-flex mb-3 mt-1">
+                        <span class="font-weight-bold">Privada</span>
+                        <button class="azules" onclick="reveals();">Reveal</button>
+                    </div>
+                    <div class="copy desenfoque" id="reveals">
+                        dljalflakfasfjafafnakfnasmdmlñasdaldañlsdksñaldkñlaskdñlaskdñalskd
+                    </div>
+
+                    <button class="btn btn-block text-primary mt-4 border border-primary p-2 rounded-pill">Ver documentacion <i class="fal fa-external-link"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="bf-footer p-3 shadow-sm text-white navbar row">
+        <div class="col-lg">
+            <div class="d-flex ml-4">
+                <a href="#" class="navbar-brand">
+                    <img src="assets/logo.png" class="mr-2" alt="Error">
+                </a>
+                <div>
+                    <span class="instant-f">INSTANT</span><br>
+                    <img src="assets/virtual.png" alt="Error">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg">
+            <div class="mx-auto navbar-nav texto-fo">
+                <span class="text-white">A service offered by Dent Co finances @ All Rights Reserved.</span>
+            </div>
+
+            <div class="ml-auto navbar-nav texto-fo">
+                <span class="text-white">Terms of service | Privace plicy | refund Policy</span>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+</body>
+<script>
+    function CopyToClipboard(id) {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(id));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+    }
+
+    function reveals() {
+        $('#reveals').removeClass("desenfoque");
+    }
+</script>
+
+</html>

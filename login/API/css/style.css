@@ -1,0 +1,274 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    background: #EFF8FF;
+    background-color: #EFF8FF !important;
+}
+
+
+/* navbar */
+
+nav {
+    background: #FFFFFF;
+    height: 70px;
+    width: 100%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.instant {
+    color: #010036;
+    font-weight: 600;
+    font-size: 18.6694px;
+}
+
+.logo {
+    display: flex;
+    float: left;
+    padding: 5px 30px;
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+.derecha {
+    float: right;
+    display: flex;
+    line-height: 60px;
+}
+
+.derecha .btn {
+    margin-right: 20px;
+    text-align: center;
+    height: 80%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.active {
+    font-weight: 600;
+    font-style: normal;
+    color: #2D77FF !important;
+    display: flex;
+    position: relative;
+}
+
+.active:before {
+    content: "";
+    position: absolute;
+    width: 70%;
+    bottom: 0;
+    left: 15%;
+    border-bottom: 5px solid #2D77FF;
+    border-radius: 20px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 50px;
+    padding: 7px 13px;
+}
+
+nav ul li a {
+    display: flex;
+    margin-left: 1em;
+    font-size: 1em;
+    color: black !important;
+    text-transform: uppercase;
+}
+
+.icono {
+    margin-right: 0.5em;
+}
+
+a:hover {
+    color: #2D77FF !important;
+    transition: .5s;
+}
+
+@media (max-width: 1329px) {
+    nav a {
+        font-size: .8em !important;
+    }
+}
+
+@media (max-width: 667px) {
+    .instant {
+        font-size: 13px;
+    }
+    .virtual {
+        width: 100%;
+    }
+    .cardd {
+        margin: auto 0;
+    }
+    .logo {
+        padding-left: 0;
+        padding-right: 0;
+        width: 180px;
+    }
+    .btn-nvbar {
+        font-size: 9px !important;
+    }
+    .nav-link span {
+        display: none;
+    }
+}
+
+@media (max-width: 423px) {
+    .logo {
+        width: 110px;
+    }
+}
+
+@media (max-width: 1182px) {
+    .text-black {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding-left: 1em;
+        padding-right: 1em;
+        position: fixed;
+        bottom: 0;
+        z-index: 1;
+        width: 100%;
+        background: white;
+    }
+    nav a {
+        font-size: 12px !important;
+    }
+    .active:before {
+        border: 0;
+    }
+}
+
+@media (max-width: 776px) {
+    nav ul a {
+        display: block !important;
+    }
+    .icono {
+        height: 22px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 375px) {
+    nav a {
+        font-size: 10px !important;
+    }
+}
+
+
+/* end navbar */
+
+
+/* body */
+
+.fondo-form {
+    background: #272B3E;
+    border-radius: 10px;
+    border: 4px solid #494D6D;
+}
+
+.select-form {
+    background: #04041C;
+    border-radius: 10px;
+    color: white;
+}
+
+.select-form2 {
+    background: #04041C;
+    color: white;
+    border: 0;
+}
+
+.credit {
+    background: linear-gradient(114.88deg, #2267FE 11.09%, #47B2F0 60.69%, #4DE6E6 114.61%);
+    border-radius: 5.808581352233887px;
+    padding: 12px;
+}
+
+.desenfoque {
+    position: static;
+    width: 117px;
+    height: 15px;
+    font-family: Graphik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 15px;
+    color: #FFFFFF;
+    filter: blur(4px);
+    /* Inside Auto Layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 4px 0px;
+}
+
+.azules {
+    color: #2D77FF;
+    background: transparent;
+    border: 0;
+    margin-left: auto;
+}
+
+.copy {
+    padding: 20px 10px;
+    width: 100%;
+    height: auto;
+    word-wrap: break-word;
+    background: #04041C;
+    border-radius: 10px;
+    color: #fff;
+}
+
+
+/* end body */
+
+
+/* footer */
+
+footer {
+    margin-top: 156px;
+}
+
+.bf-footer {
+    background: #181C2C;
+    width: 100%;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+.instant-f {
+    color: white;
+}
+
+.texto-fo {
+    text-align: center;
+}
+
+
+/* end footer */

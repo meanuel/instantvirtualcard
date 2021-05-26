@@ -16,6 +16,9 @@ body {
     background-color: #EFF8FF !important;
 }
 
+
+/* navbar */
+
 nav {
     background: #FFFFFF;
     height: 70px;
@@ -60,12 +63,10 @@ nav {
 }
 
 .active {
-    font-family: Graphik;
     font-weight: 600;
-    font-size: 20px;
     font-style: normal;
     color: #2D77FF !important;
-    display: inline-block;
+    display: flex;
     position: relative;
 }
 
@@ -91,9 +92,15 @@ nav ul li {
 }
 
 nav ul li a {
+    display: flex;
+    margin-left: 1em;
     font-size: 1em;
     color: black !important;
     text-transform: uppercase;
+}
+
+.icono {
+    margin-right: 0.5em;
 }
 
 a:hover {
@@ -101,20 +108,43 @@ a:hover {
     transition: .5s;
 }
 
-@media (max-width: 1290px) {
+@media (max-width: 1329px) {
     nav a {
         font-size: .8em !important;
     }
 }
 
 @media (max-width: 667px) {
-    .logo img {
+    .instant {
+        font-size: 13px;
+    }
+    .virtual {
         width: 100%;
+    }
+    .cardd {
+        margin: auto 0;
+    }
+    .logo {
+        padding-left: 0;
+        padding-right: 0;
+        width: 180px;
+    }
+    .btn-nvbar {
+        font-size: 9px !important;
+    }
+    .nav-link span {
+        display: none;
     }
 }
 
-@media (max-width: 1054px) {
-    nav ul {
+@media (max-width: 423px) {
+    .logo {
+        width: 110px;
+    }
+}
+
+@media (max-width: 1182px) {
+    .text-black {
         display: flex;
         justify-content: space-between;
         margin: 0;
@@ -122,6 +152,7 @@ a:hover {
         padding-right: 1em;
         position: fixed;
         bottom: 0;
+        z-index: 1;
         width: 100%;
         background: white;
     }
@@ -132,3 +163,296 @@ a:hover {
         border: 0;
     }
 }
+
+@media (max-width: 776px) {
+    nav ul a {
+        display: block !important;
+    }
+    .icono {
+        height: 22px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 375px) {
+    nav a {
+        font-size: 10px !important;
+    }
+}
+
+
+/* end navbar */
+
+
+/* content */
+
+.targ {
+    background: linear-gradient(103.95deg, #FFAB5E -3.65%, #F7E53E 97.12%);
+    height: 100%;
+}
+
+.btn-targ {
+    background-color: #FFAE5D !important;
+}
+
+.lineasa {
+    line-height: 19px !important;
+}
+
+.bg-progress {
+    background-color: #51D676 !important;
+}
+
+.activee {
+    font-weight: 600;
+    font-style: normal;
+    color: #2D77FF !important;
+    display: flex;
+    position: relative;
+}
+
+.activee:before {
+    content: "";
+    position: absolute;
+    width: 70%;
+    bottom: 0;
+    left: 15%;
+    border-bottom: 5px solid #2D77FF;
+    border-radius: 20px;
+}
+
+.navbar-2 {
+    margin-top: 1.2rem !important;
+    margin-bottom: 1.2rem !important;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 1000px) {
+    h1 {
+        font-size: 20px !important;
+    }
+    span {
+        font-size: 15px !important;
+    }
+    .Programacion {
+        display: none;
+    }
+    .button-nav2 {
+        position: absolute;
+        z-index: 1;
+        right: 0;
+        top: -40px;
+    }
+    .categories {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        top: -30px;
+    }
+    .navbar-2 {
+        margin-top: 3.2rem !important;
+        display: block;
+    }
+    .navbar-2 ul {
+        text-align: center;
+        float: none;
+        margin: 0;
+    }
+    .navbar-2 ul li {
+        padding: 0;
+        margin: 0;
+    }
+    .navbar-2 ul li a {
+        margin: 0;
+    }
+}
+
+.contenedor {
+    margin: 1rem 0;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.header-content span {
+    font-size: 26px;
+}
+
+.blanco {
+    background: white;
+    padding: 30px;
+}
+
+.cosa {
+    display: flex;
+}
+
+h4 {
+    font-weight: bold !important;
+    font-size: 14px !important;
+}
+
+h5 {
+    font-size: 14px !important;
+}
+
+.h4 {
+    font-weight: normal !important;
+    font-size: 10px !important;
+}
+
+.desplegar {
+    font-size: 14px !important;
+}
+
+.progress {
+    width: 175px;
+}
+
+.btn-1 {
+    background: #2D77FF;
+    border-radius: 10px;
+    color: white;
+    font-size: 14px;
+    padding: 8px 14px;
+    border: 0;
+}
+
+.btn-2 {
+    border: 1px solid #2D77FF;
+    border-radius: 10px;
+    color: #2D77FF;
+    font-size: 14px;
+    padding: 8px 14px;
+}
+
+.bg-contened {
+    background-color: #FBFBFB;
+}
+
+@media (max-width: 991px) {
+    .mario {
+        padding-top: 0.5rem !important;
+        display: flex;
+        justify-content: space-between;
+    }
+    .mario-2 {
+        display: flex;
+        padding-top: 0.5rem !important;
+    }
+    .desplegar {
+        padding: 8px 14px !important;
+        z-index: 1;
+        position: absolute;
+        bottom: -79px;
+        right: 0;
+        border: 1px solid #2D77FF !important;
+        border-radius: 10px !important;
+    }
+    .btn-2 {
+        margin-right: 167px;
+        margin-left: auto;
+    }
+    .palo {
+        display: none;
+    }
+}
+
+
+/* modal */
+
+.modal-content {
+    background-color: #202639 !important;
+}
+
+.modal-title {
+    font-size: 40px !important;
+    font-weight: bold !important;
+}
+
+.close span {
+    color: white;
+}
+
+.green,
+.orange,
+.blue,
+.purple {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 0;
+}
+
+.purple {
+    background: #702DFF;
+}
+
+.blue {
+    background: #5690FF;
+}
+
+.orange {
+    background: #FF9A61;
+}
+
+.green {
+    background: #1CC34B;
+}
+
+.per {
+    font-size: 20px !important;
+}
+
+.cancel {
+    background: rgba(223, 20, 20, 0.1);
+    border: solid 1px #DF1414 !important;
+    color: #DF1414 !important;
+}
+
+.freeze {
+    background: rgba(45, 119, 255, 0.1);
+    border: solid 1px #2D77FF !important;
+    ;
+    color: #2D77FF !important;
+}
+
+.invoice {
+    background-color: #4D5B81 !important;
+}
+
+.pro {
+    width: 100%;
+}
+
+
+/* end modal */
+
+
+/* end content */
+
+
+/* footer */
+
+.bf-footer {
+    background: #181C2C;
+    width: 100%;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+.instant-f {
+    color: white;
+}
+
+.texto-fo {
+    text-align: center;
+}
+
+
+/* end footer */
