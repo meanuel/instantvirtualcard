@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transactions</title>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <!-- chart js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.0/chart.min.js" integrity="sha512-yadYcDSJyQExcKhjKSQOkBKy2BLDoW6WnnGXCAkCoRlpHGpYuVuBqGObf3g/TdB86sSbss1AOP4YlGSb6EKQPg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- font awesome -->
+    <link href="https://kit-pro.fontawesome.com/releases/v5.15.3/css/pro.min.css" rel="stylesheet">
+
+    <!-- slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav>
+        <div class="logo">
+            <a class="cardd" href="#">
+                <img class="virtual" src="assets/logo.png" class="mr-2" alt="Error">
+            </a>
+            <div>
+                <span class="instant">INSTANT</span><br>
+                <img class="virtual" src="assets/virtual.png" alt="Error">
+            </div>
+        </div>
+
+        <div class="derecha">
+            <a href="#" class="btn btn-nvbar btn-primary"><i class="far fa-plus-circle"></i> Create a new account</a>
+
+            <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="assets/avatar.jpg" class="avatar" alt="error">
+                    <span class="mx-2 text-black-50">Manuel Lopez</span>
+                    <i class="fas fa-chevron-down text-black-50"></i>
+                </a>
+                <div class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
+                    <a href="#" class="dropdown-item">Perfil</a>
+                    <a href="#" class="dropdown-item">Perfil</a>
+                    <a href="#" class="dropdown-item">Perfil</a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item">Perfil</a>
+                </div>
+            </div>
+        </div>
+
+        <ul class="text-black">
+            <li>
+                <a href="#">
+                    <div class="icono"><i class="fal fa-credit-card"></i></div>
+                    <div>My cards</div>
+                </a>
+            </li>
+            <li>
+                <a class="active" href="#">
+                    <div class="icono"><i class="fas fa-bars"></i> </div>
+                    <div>Transactions</div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="icono"><i class="fas fa-angle-left"></i><i class="fas fa-angle-right"></i></div>
+                    <div>API</div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="icono"><i class="far fa-cog"></i></div>
+                    <div>Settings</div>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- end nav -->
+
+    <div class="container my-4">
+        <h1>Transactions</h1>
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, condimentum nec, viverra vitae gravida. cursus eget</span>
+
+        <!-- carrousel -->
+        <div class="d-flex">
+            <div class="arrow_prev my-auto">
+                <span class="circle"><i class="fas fa-angle-left"></i></span>
+            </div>
+
+            <div class="slider container mt-4">
+                <!-- target 1 -->
+                <div class="targ" style="background: linear-gradient(262.6deg, #642DFF -1.91%, #2D77FF 69.67%);">
+                    <div class="d-flex">
+                        <span class="title-target">Develoment</span>
+                        <button class="btn-targ">Modify limit</button>
+                    </div>
+                    <h5 class="mb-3">2.000 USD</h5>
+
+                    <span class="limit">50% limit reached</span>
+                    <div class="progress mt-2">
+                        <div class="progress-bar bg-progress rounded-lg" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <!-- end target 1 -->
+
+                <!-- taregt 2 -->
+                <div class="targ" style="background: linear-gradient(103.95deg, #F7E53E -3.65%, #FFAB5E 97.12%);">
+                    <div class="d-flex">
+                        <span class="title-target">Develoment</span>
+                        <button class="btn-targ">Modify limit</button>
+                    </div>
+                    <h5 class="mb-3">2.000 USD</h5>
+
+                    <span class="limit">50% limit reached</span>
+                    <div class="progress mt-2">
+                        <div class="progress-bar bg-progress rounded-lg" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <!-- end target 2 -->
+
+                <!-- taregt 3 -->
+                <div class="targ" style="background: linear-gradient(103.95deg, #3EF7BF -3.65%, #6CB6D6 97.12%);">
+                    <div class="d-flex">
+                        <span class="title-target">Develoment</span>
+                        <button class="btn-targ">Modify limit</button>
+                    </div>
+                    <h5 class="mb-3">2.000 USD</h5>
+
+                    <span class="limit">50% limit reached</span>
+                    <div class="progress mt-2">
+                        <div class="progress-bar bg-progress rounded-lg" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <!-- end target 3 -->
+
+                <!-- taregt 4 -->
+                <div class="targ" style="background: linear-gradient(103.95deg, #3EF7BF -3.65%, #6CB6D6 97.12%);">
+                    <div class="d-flex">
+                        <span class="title-target">Develoment</span>
+                        <button class="btn-targ">Modify limit</button>
+                    </div>
+                    <h5 class="mb-3">2.000 USD</h5>
+
+                    <span class="limit">50% limit reached</span>
+                    <div class="progress mt-2">
+                        <div class="progress-bar bg-progress rounded-lg" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <!-- end target 4 -->
+            </div>
+
+            <div class="arrow_next my-auto">
+                <span class="circle"><i class="fas fa-angle-right"></i></span>
+            </div>
+        </div>
+
+        <!-- end carrousel -->
+
+        <!-- table -->
+
+        <div class="row">
+            <div class="col-lg-3 mt-2">
+                <h2>All transactions</h2>
+            </div>
+            <!-- header button -->
+            <div class="col-lg-5 col2 mt-2">
+                <button class="btn-table">This Month</button>
+                <button class="btn-table">This Week</button>
+                <div class="btn-table">
+                    <button class="btn"><i class="far fa-calendar-minus"></i> From</button> |
+                    <button class="btn"><i class="far fa-calendar-minus"></i> To</button>
+                </div>
+            </div>
+            <div class="col-lg-2 mt-2">
+                <div class="search">
+                    <i class="fal fa-search"></i>
+                    <input type="text" placeholder="Search Transaccions">
+                </div>
+            </div>
+            <div class="col-lg-2 mt-2 text-center">
+                <button class="btn-table"><i class="fal fa-filter"></i> Filter</button>
+            </div>
+        </div>
+
+        <!-- end header button -->
+
+        <div class="bg-white mt-4 px-4">
+            <div class="row">
+                <div class="col-md-6 mt-2">
+                    <span>Search results - 20 Results</span>
+                </div>
+                <div class="col-md-6 mt-2">
+                    <div class="ml-auto">
+                        <button class="btn btn-table-2 text-white"><i class="fal fa-cloud-download"></i> Export PDF</button>
+                        <button class="btn btn-table-2 text-white"><i class="fas fa-print"></i> Print</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table mt-4">
+                    <thead class="tr-table">
+                        <tr>
+                            <th>Concep</th>
+                            <th>Date</th>
+                            <th>Name</th>
+                            <th>Category</th>
+                            <th>Card</th>
+                            <th>Amount</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <th scope="row"><i class="far fa-file-alt"></i> Envato subscription</th>
+                            <th>12/04/2021</th>
+                            <th>Adrian loreto</th>
+                            <th class="align-middle"><button class="btn text-white bg-success rounded-pill">Development</button></th>
+                            <th>**** **** **** 3456</th>
+                            <th class="text-danger">-20.00 USD</th>
+                            <th><button class="btn rounded-pill border border-primary text-primary"><i class="far fa-file-alt"></i> Charge invoice</button></th>
+                        </tr>
+                        <tr>
+                            <th scope="row"><i class="far fa-file-alt"></i> Envato subscription</th>
+                            <th>12/04/2021</th>
+                            <th>Adrian loreto</th>
+                            <th class="align-middle"><button class="btn text-white bg-success rounded-pill">Development</button></th>
+                            <th>**** **** **** 3456</th>
+                            <th class="text-danger">-20.00 USD</th>
+                            <th><button class="btn rounded-pill border border-primary text-primary"><i class="far fa-file-alt"></i> Charge invoice</button></th>
+                        </tr>
+                        <tr>
+                            <th scope="row"><i class="far fa-file-alt"></i> Envato subscription</th>
+                            <th>12/04/2021</th>
+                            <th>Adrian loreto</th>
+                            <th class="align-middle"><button class="btn text-white bg-success rounded-pill">Development</button></th>
+                            <th>**** **** **** 3456</th>
+                            <th class="text-danger">-20.00 USD</th>
+                            <th><button class="btn rounded-pill border border-primary text-primary"><i class="far fa-file-alt"></i> Charge invoice</button></th>
+                        </tr>
+                        <tr>
+                            <th scope="row"><i class="far fa-file-alt"></i> Envato subscription</th>
+                            <th>12/04/2021</th>
+                            <th>Adrian loreto</th>
+                            <th class="align-middle"><button class="btn text-white bg-success rounded-pill">Development</button></th>
+                            <th>**** **** **** 3456</th>
+                            <th class="text-danger">-20.00 USD</th>
+                            <th><button class="btn rounded-pill border border-primary text-primary"><i class="far fa-file-alt"></i> Charge invoice</button></th>
+                        </tr>
+                        <tr>
+                            <th scope="row"><i class="far fa-file-alt"></i> Envato subscription</th>
+                            <th>12/04/2021</th>
+                            <th>Adrian loreto</th>
+                            <th class="align-middle"><button class="btn text-white bg-success rounded-pill">Development</button></th>
+                            <th>**** **** **** 3456</th>
+                            <th class="text-danger">-20.00 USD</th>
+                            <th><button class="btn rounded-pill border border-primary text-primary"><i class="far fa-file-alt"></i> Charge invoice</button></th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+        <!-- end table -->
+    </div>
+
+    <!-- footer -->
+    <footer class="bf-footer p-3 shadow-sm text-white navbar row">
+        <div class="col-lg">
+            <div class="d-flex ml-4">
+                <a href="#" class="navbar-brand">
+                    <img src="assets/logo.png" class="mr-2" alt="Error">
+                </a>
+                <div>
+                    <span class="instant-f">INSTANT</span><br>
+                    <img src="assets/virtual.png" alt="Error">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg">
+            <div class="mx-auto navbar-nav texto-fo">
+                <span class="text-white">A service offered by Dent Co finances @ All Rights Reserved.</span>
+            </div>
+
+            <div class="ml-auto navbar-nav texto-fo">
+                <span class="text-white">Terms of service | Privace plicy | refund Policy</span>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+</body>
+<script>
+    $(".slider").slick({
+        prevArrow: '.arrow_prev',
+        nextArrow: '.arrow_next',
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        variableWidth: true
+    });
+</script>
+
+</html>

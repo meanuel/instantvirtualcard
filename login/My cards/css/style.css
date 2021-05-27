@@ -355,7 +355,7 @@ h5 {
         border-radius: 10px !important;
     }
     .btn-2 {
-        margin-right: 167px;
+        margin-right: 146px;
         margin-left: auto;
     }
     .palo {
@@ -363,8 +363,69 @@ h5 {
     }
 }
 
+.table {
+    min-width: 840px;
+}
+
 
 /* modal */
+
+.target-p {
+    background-image: url(../assets/blue.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.number {
+    font-weight: bold !important;
+    font-size: 23.3596px !important;
+    color: white;
+    line-height: 27px !important;
+    padding-left: 50px;
+    padding-top: 30%;
+}
+
+.btn-tarjeta {
+    margin-top: 1em;
+    background: transparent;
+    border: 1px solid #FFFFFF;
+    padding: 8px 16px;
+    border-radius: 100px;
+    margin-left: 45px;
+    color: #FFFFFF;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.nombre {
+    padding-bottom: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    font-size: 19.3618px !important;
+    color: white;
+    line-height: 27px !important;
+    padding-left: 50px;
+}
+
+@media (max-width: 991px) {
+    .number,
+    .btn-tarjeta,
+    .nombre {
+        font-size: 16px !important;
+    }
+}
+
+@media (max-width: 540px) {
+    .number,
+    .nombre {
+        padding-left: 10px;
+    }
+    .btn-tarjeta {
+        margin-left: 5px;
+    }
+}
 
 .modal-content {
     background-color: #202639 !important;
@@ -428,6 +489,12 @@ h5 {
 
 .pro {
     width: 100%;
+}
+
+.btn-verde {
+    background: #75DC6C;
+    color: #fff;
+    border: 0;
 }
 
 
