@@ -193,7 +193,7 @@
                     <div class="col-lg-3 mario-2 my-auto">
                         <span class="palo">|</span>
                         <button class="btn-1" data-toggle="modal" data-target="#cargar-1">$ Sharge</button>
-                        <button class="btn-2 ml-1">Modify</button>
+                        <button class="btn-2 ml-1" data-toggle="modal" data-target="#modify-1">Modify</button>
                     </div>
                 </div>
                 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
@@ -312,7 +312,7 @@
                     <div class="col-lg-3 mario-2 my-auto">
                         <span class="palo">|</span>
                         <button class="btn-1" data-toggle="modal" data-target="#cargar-2">$ Sharge</button>
-                        <button class="btn-2">Modify</button>
+                        <button class="btn-2" data-toggle="modal" data-target="#modify-2">Modify</button>
                     </div>
                 </div>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
@@ -438,8 +438,8 @@
 
 
 
-    <!-- Modal 1 -->
-    <div class="modal fade" id="cargar-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- Modal modify 1-->
+    <div class="modal fade" id="modify-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content container">
                 <div class="modal-header">
@@ -557,10 +557,10 @@
             </div>
         </div>
     </div>
-    <!-- end modal 1 -->
+    <!-- end modal modify 1-->
 
-    <!-- Modal 2 -->
-    <div class="modal fade" id="cargar-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- modal modify 2-->
+    <div class="modal fade" id="modify-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content container">
                 <div class="modal-header">
@@ -573,7 +573,7 @@
 
                     <div class="target-p mx-auto">
                         <h1 class="number">**** **** **** 4566</h1>
-                        <button class="btn-tarjeta"><i class="far fa-eye"></i> View all information for pay</button>
+                        <button class="btn btn-tarjeta"><i class="far fa-eye"></i> View all information for pay</button>
                         <h1 class="nombre">Perez Blanco</h1>
                     </div>
 
@@ -617,7 +617,7 @@
                         <span class="text-white ml-auto my-auto">200.00 usd</span>
                         <button class="btn-verde rounded-pill py-0 px-4 ml-2">PAID</button>
                         <span class="text-white mx-2 my-auto">|</span>
-                        <span class="text-white my-auto"><i class="far fa-trash-alt"></i></span>
+                        <button class="btn text-white my-auto"><i class="far fa-trash-alt"></i></button>
                     </div>
 
                     <div class="d-flex mt-3">
@@ -628,7 +628,7 @@
                         <span class="text-white ml-auto my-auto">200.00 usd</span>
                         <button class="btn-verde rounded-pill py-0 px-4 ml-2">PAID</button>
                         <span class="text-white mx-2 my-auto">|</span>
-                        <span class="text-white my-auto"><i class="far fa-trash-alt"></i></span>
+                        <button class="text-white btn my-auto"><i class="far fa-trash-alt"></i></button>
                     </div>
 
                     <div class="d-flex mt-3">
@@ -639,7 +639,7 @@
                         <span class="text-white ml-auto my-auto">200.00 usd</span>
                         <button class="btn-verde rounded-pill py-0 px-4 ml-2">PAID</button>
                         <span class="text-white mx-2 my-auto">|</span>
-                        <span class="text-white my-auto"><i class="far fa-trash-alt"></i></span>
+                        <button class="text-white btn my-auto"><i class="far fa-trash-alt"></i></button>
                     </div>
 
                     <hr size="10px" color="white">
@@ -661,8 +661,370 @@
             </div>
         </div>
     </div>
+    <!-- end modal 2 -->
+
+    <!-- modal cargar 1 -->
+    <div class="modal fade" id="cargar-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content container">
+                <div class="modal-header">
+                    <h5 class="modal-title text-white" id="exampleModalLabel">Cargar</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span clas="circle-close" aria-hidden="true"><i class="far fa-times-circle"></i></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="target-p mx-auto">
+                        <div>
+                            <button class="btn button-tar"><i class="fal fa-pencil"></i> Modfy</button>
+                        </div>
+                        <h1 class="number">**** **** **** 4566</h1>
+                        <button class="btn-tarjeta"><i class="far fa-eye"></i> View all information for pay</button>
+                        <h1 class="nombre">Perez Blanco</h1>
+                    </div>
+
+                    <hr size="10px" color="white">
+
+                    <p class="text-white">Payment method</p>
+
+                    <!-- select box -->
+                    <div class="selectbox">
+                        <div class="select" id="select">
+                            <div class="contenido-select">
+                                <div class="contenido-opcion">
+                                    <img src="assets/targ.png" alt="error">
+                                    <div class="textos">
+                                        <h1 class="titulo">Instant bank transfer (IBAN)</h1>
+                                        <p class="descripcion">Commission 0.5%</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <i class="fas fa-angle-down"></i>
+                        </div>
+
+                        <div class="opciones" id="opciones">
+                            <a href="#" class="opcion">
+                                <div class="contenido-opcion">
+                                    <img src="assets/targ.png" alt="error">
+                                    <div class="textos">
+                                        <h1 class="titulo">Credit card (instant)</h1>
+                                        <p class="descripcion">Commission 2.5%</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="opcion">
+                                <div class="contenido-opcion">
+                                    <img src="assets/targ.png" alt="error">
+                                    <div class="textos">
+                                        <h1 class="titulo">Instant bank transfer (IBAN)</h1>
+                                        <p class="descripcion">Commission 0.5%</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="opcion">
+                                <div class="contenido-opcion">
+                                    <img src="assets/targ.png" alt="error">
+                                    <div class="textos">
+                                        <h1 class="titulo">Bank transfer (no - IBAN)</h1>
+                                        <p class="descripcion">Commission 1.5%</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- aqui esta el input segun el select que escojan para el form -->
+                        <input type="hidden" name="banco" id="inputSelect" value="Instant bank transfer (IBAN)">
+                    </div>
+
+                    <!-- end select box -->
+
+                    <div class="content-sharge">
+                        <span> <strong>Addressee:</strong> Halaway & Rivas</span>
+                        <br>
+                        <span> <strong>Bank:</strong> Community Federal Savings Bank</span>
+                        <br>
+                        <span> <strong>Country:</strong> United States</span>
+                        <br>
+                        <span> <strong>Swift:</strong> CMFGUS33</span>
+                        <br>
+                        <span> <strong>Account number:</strong> 8310422111 Routing number (ACH or ABA)026073150</span>
+                        <br>
+                        <span> <strong>Concept:</strong> adrtraba</span>
+                        <br>
+                        <span> <strong>Email:</strong> info@instantpay.com</span>
+                    </div>
+
+                    <div class="content-sharge mt-2">
+                        <h2>Subject: ajd332k23</h2>
+                        <button class="btn">Without this code we cannot charge the card directly</button>
+                    </div>
+
+                    <button class="btn my-2 border-lineal btn-block text-white"><i class="fal fa-upload"></i> Upload transfer receipt</button>
+
+                    <input type="checkbox" id="cbox2"> <label class="text-white" for="cbox2">I agree to the Terms of Service</label>
+
+                    <button class="btn btn-primary btn-block my-2"><i class="fal fa-external-link-square"></i> Send payment now</button>
+
+                    <div class="d-flex text-white">
+                        <hr size="10px" color="white" width="50%">
+                        <span class="mx-1">Or</span>
+                        <hr size="10px" color="white" width="50%">
+                    </div>
+
+                    <div class="d-flex">
+                        <button class="btn button-pag"><img src="assets/Ellipse 59.png" alt="error"> Pay with skrill</button>
+                        <button class="btn button-pag ml-auto"><img src="assets/Ellipse 60.png" alt="error"> Pay with bizum</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- end modal cargar 1 -->
+
+    <!-- modal cargar 1 -->
+    <div class="modal fade" id="cargar-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content container">
+                <div class="modal-header">
+                    <h5 class="modal-title text-white" id="exampleModalLabel">Cargar</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span clas="circle-close" aria-hidden="true"><i class="far fa-times-circle"></i></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="target-p mx-auto">
+                        <div>
+                            <button class="btn button-tar"><i class="fal fa-pencil"></i> Modfy</button>
+                        </div>
+                        <h1 class="number">**** **** **** 4566</h1>
+                        <button class="btn-tarjeta"><i class="far fa-eye"></i> View all information for pay</button>
+                        <h1 class="nombre">Perez Blanco</h1>
+                    </div>
+
+                    <hr size="10px" color="white">
+
+                    <p class="text-white">Payment method</p>
+
+                    <!-- select box -->
+                    <div class="selectbox">
+                        <div class="select2" id="select2">
+                            <div class="contenido-select">
+                                <div class="contenido-opcion">
+                                    <img src="assets/targ.png" alt="error">
+                                    <div class="textos">
+                                        <h1 class="titulo">Credit card (instant)</h1>
+                                        <p class="descripcion">Commission 2.5%</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <i class="fas fa-angle-down"></i>
+                        </div>
+
+                        <div class="opciones2" id="opciones2">
+                            <a href="#" class="opcion">
+                                <div class="contenido-opcion">
+                                    <img src="assets/targ.png" alt="error">
+                                    <div class="textos">
+                                        <h1 class="titulo">Credit card (instant)</h1>
+                                        <p class="descripcion">Commission 2.5%</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="opcion">
+                                <div class="contenido-opcion">
+                                    <img src="assets/targ.png" alt="error">
+                                    <div class="textos">
+                                        <h1 class="titulo">Instant bank transfer (IBAN)</h1>
+                                        <p class="descripcion">Commission 0.5%</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="opcion">
+                                <div class="contenido-opcion">
+                                    <img src="assets/targ.png" alt="error">
+                                    <div class="textos">
+                                        <h1 class="titulo">Bank transfer (no - IBAN)</h1>
+                                        <p class="descripcion">Commission 1.5%</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- aqui esta el input segun el select que escojan para el form -->
+                        <input type="hidden" name="banco" id="inputSelect2" value="Credit card (instant)">
+                    </div>
+
+                    <!-- end select box -->
+
+                    <div class="content-sharge content-sharge2">
+                        <div class="form-group">
+                            <label for="email">Your email</label>
+                            <input id="email" class="form-control" type="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="Name">Name on card</label>
+                            <input id="Name" class="form-control" type="text">
+                        </div>
+                        <div class="form-group">
+                            <label for="card">Card number</label>
+                            <input id="card" class="form-control" type="number">
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg">
+                                <label for="date">Exp. Date</label>
+                                <input id="date" class="form-control" type="month">
+                            </div>
+                            <div class="form-group col-lg">
+                                <label for="cvv">CVV</label>
+                                <input id="cvv" class="form-control" type="number">
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr size="10px" color="white">
+
+                    <div class="recurring">
+                        <h1>Recurring payment ?</h1>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+
+                    <hr size="10px" color="white">
+
+                    <h4 class="text-white">Frecuency</h4>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label text-white" for="inlineRadio1">Every month</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label text-white" for="inlineRadio2">Every 2 month</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                        <label class="form-check-label text-white" for="inlineRadio3">Other</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+                        <label class="form-check-label text-white" for="inlineRadio4">Every 3 month</label>
+                    </div>
+
+                    <div class="content-sharge content-sharge2 mt-2">
+                        <div class="d-flex">
+                            <div class="form-check my-auto">
+                                <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option11" aria-label="...">
+                            </div>
+
+                            <div class="formato">
+                                <label for="amount">Charge fixed amoun</label>
+
+                                <div class="group-select">
+                                    <input class="grupito" id="amount" type="number">
+                                    <span>|</span>
+                                    <select name="typeM">
+                                        <option value="USD">USD</option>
+                                        <option value="EUR">EUR</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="form-check my-auto">
+                                <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option11" aria-label="...">
+                            </div>
+
+                            <div class="formato">
+                                <label for="amount">Charge up to maximum specified amount</label>
+
+                                <div class="group-select">
+                                    <input class="grupito" id="amount" type="number">
+                                    <span>|</span>
+                                    <select name="typeM">
+                                        <option value="USD">USD</option>
+                                        <option value="EUR">EUR</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <input type="checkbox" id="cbox2"> <label class="text-white" for="cbox2">I agree to the Terms of Service</label>
+
+                    <button class="btn btn-primary btn-block my-2"><i class="fal fa-external-link-square"></i> Send payment now</button>
+
+                    <div class="d-flex text-white">
+                        <hr size="10px" color="white" width="50%">
+                        <span class="mx-1">Or</span>
+                        <hr size="10px" color="white" width="50%">
+                    </div>
+
+                    <div class="d-flex">
+                        <button class="btn button-pag"><img src="assets/Ellipse 59.png" alt="error"> Pay with skrill</button>
+                        <button class="btn button-pag ml-auto"><img src="assets/Ellipse 60.png" alt="error"> Pay with bizum</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- end modal cargar 1 -->
 </body>
 <script>
+    // select
+    const select = document.querySelector('#select');
+    const opciones = document.querySelector('#opciones');
+    const contenidoSelect = document.querySelector('#select .contenido-select');
+    const hiddenInput = document.querySelector('#inputSelect');
+
+    document.querySelectorAll('#opciones > .opcion').forEach((opcion) => {
+        opcion.addEventListener('click', (e) => {
+            e.preventDefault();
+            contenidoSelect.innerHTML = e.currentTarget.innerHTML;
+            select.classList.toggle('active');
+            opciones.classList.toggle('active');
+            hiddenInput.value = e.currentTarget.querySelector('.titulo').innerText;
+        });
+    });
+
+    select.addEventListener('click', () => {
+        select.classList.toggle('active');
+        opciones.classList.toggle('active');
+    });
+
+    // end select
+
+    // select 2
+    const select2 = document.querySelector('#select2');
+    const opciones2 = document.querySelector('#opciones2');
+    const contenidoSelect2 = document.querySelector('#select2 .contenido-select');
+    const hiddenInput2 = document.querySelector('#inputSelect2');
+
+    document.querySelectorAll('#opciones2 > .opcion').forEach((opcion) => {
+        opcion.addEventListener('click', (e) => {
+            e.preventDefault();
+            contenidoSelect2.innerHTML = e.currentTarget.innerHTML;
+            select2.classList.toggle('active');
+            opciones2.classList.toggle('active');
+            hiddenInput2.value = e.currentTarget.querySelector('.titulo').innerText;
+        });
+    });
+
+    select2.addEventListener('click', () => {
+        select2.classList.toggle('active');
+        opciones2.classList.toggle('active');
+    });
+
+    // end select 2
+
     $('td').tooltip();
     var ctx = document.getElementById('myChart').getContext('2d');
     var gradientStroke = ctx.createLinearGradient(0, 0, 0, 270);
